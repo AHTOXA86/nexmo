@@ -48,6 +48,10 @@ module Nexmo
       get('/account/get-prefix-pricing/outbound', {:prefix => prefix})
     end
 
+    def get_number_insight(params)
+      get('/ni/json', params)
+    end
+
     def get_account_numbers(params)
       get('/account/numbers', params)
     end
